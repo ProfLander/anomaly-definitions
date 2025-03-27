@@ -479,17 +479,21 @@ function game_memory_object:object( game_memory_object) end
 
 
 ---@class fcolor
----@field a any
----@field b any
----@field g any
----@field r any
+---@field a number
+---@field b number
+---@field g number
+---@field r number
 ---@overload fun(): fcolor
 fcolor = {}
+---@param r
+---@param g
+---@param b
+---@param a
 ---@return fcolor
-function fcolor:set(number, number, number, number) end
+function fcolor:set(r, g, b, a) end
 ---@param fcolor fcolor
 ---@return fcolor
-function fcolor:set( fcolor) end
+function fcolor:set(fcolor) end
 ---@param number number
 ---@return fcolor
 function fcolor:set(number) end
