@@ -952,6 +952,7 @@ function game_object:level_vertex_id()  end
 function game_object:game_vertex_id()  end
 ---@return string
 function game_object:section()  end
+---@return string
 function game_object:name()  end
 function game_object:clsid()  end
 function game_object:parent()  end
