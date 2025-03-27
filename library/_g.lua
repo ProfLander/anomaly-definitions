@@ -137,6 +137,8 @@ function string.gsplit(s, sep, plain) end
 ---@param s string
 ---@return string
 function trim(s) end
+---@param text string
+---@return string
 function strformat(text, ...) end
 ---@return string[]
 function str_explode(str, sep, plain) end
