@@ -1105,6 +1105,7 @@ function game_object:can_throw_grenades()  end
 function game_object:can_throw_grenades(boolean) end
 	-- items
 function game_object:active_slot() end
+---@return game_object?
 function game_object:active_item() end
 function game_object:active_detector()  end
 function game_object:show_detector() end
