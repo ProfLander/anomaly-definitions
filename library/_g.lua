@@ -234,7 +234,7 @@ function ini_file_ex:section_exist(section) end
 function ini_file_ex:line_exist(section, key) end
 ---@param section string
 ---@param key string
----@return string|nil
+---@return string?
 function ini_file_ex:r_string_ex(section, key) end
 ---@param section string
 ---@param key string
@@ -243,7 +243,7 @@ function ini_file_ex:r_string_ex(section, key) end
 function ini_file_ex:r_bool_ex(section, key, default) end
 ---@param section string
 ---@param key string
----@return number|nil
+---@return number?
 function ini_file_ex:r_float_ex(section, key) end
 ---@param section string
 ---@param key string
@@ -378,7 +378,7 @@ function get_object_community(obj) end
 
 ---Get Game Object by ID
 ---@param id number
----@return game_object|nil
+---@return game_object?
 function get_object_by_id(id) end
 function character_community(obj) end
 -- no "actor_"
