@@ -134,6 +134,8 @@ function distance_2d(a, b) end
 ---@return vector
 function distance_2d_sqr(a, b) end
 function string.gsplit(s, sep, plain) end
+---@param s string
+---@return string
 function trim(s) end
 function strformat(text, ...) end
 ---@return string[]
