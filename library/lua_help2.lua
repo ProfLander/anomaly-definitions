@@ -946,6 +946,7 @@ game_object.watch = 1
 
 -- All types
 function game_object:id()  end
+---@return vector
 function game_object:position()  end
 function game_object:level_vertex_id()  end
 function game_object:game_vertex_id()  end
