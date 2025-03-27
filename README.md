@@ -42,7 +42,7 @@ Add the following settings:
     "lowercase-global"
   ],
   "Lua.runtime.plugin": "<repo>/plugin.lua",
-  "Lua.runtime.version": "Lua 5.1",
+  "Lua.runtime.version": "LuaJIT",
 }
 ```
 
