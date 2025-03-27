@@ -571,27 +571,68 @@ function flags32:get()  end
 ---@field k any
 ---@overload fun(): matrix
 matrix = {}
+---@param _quaternion_number any
+---@param vector vector
+---@return matrix
 function matrix:mk_xform(_quaternion_number,  vector) end
 ---@param matrix matrix
 ---@return matrix
-function matrix:set( matrix) end
+function matrix:set(matrix) end
+---@param x vector
+---@param y vector
+---@param z vector
+---@param w vector
 ---@return matrix
-function matrix:set( vector,  vector,  vector,  vector) end
-function matrix:div( matrix, number) end
+function matrix:set(x,  y,  z,  w) end
+---@param matrix matrix
 ---@param number number
+---@return matrix
+function matrix:div(matrix, number) end
+---@param number number
+---@return matrix
 function matrix:div(number) end
+---@return matrix
 function matrix:identity() end
-function matrix:setHPB(number, number, number) end
-function matrix:setXYZ(number, number, number) end
-function matrix:getHPB(matrix, number, number, number) end
-function matrix:mul( matrix,  matrix) end
-function matrix:mul( matrix, number) end
+---@param heading number
+---@param pitch number
+---@param bank number
+---@return matrix
+function matrix:setHPB(heading, pitch, bank) end
+---@param x number
+---@param y number
+---@param z number
+---@return matrix
+function matrix:setXYZ(x, y, z) end
+---@param matrix number
+---@param n1 number
+---@param n2 number
+---@param n3 number
+---@return any
+function matrix:getHPB(matrix, n1, n2, n3) end
+---@param ma matrix
+---@param mb matrix
+---@return matrix
+function matrix:mul(ma, mb) end
+---@param matrix matrix
 ---@param number number
+---@return matrix
+function matrix:mul(matrix, number) end
+---@param number number
+---@return matrix
 function matrix:mul(number) end
-function matrix:setXYZi(number, number, number) end
-
-
-
+---@param x number
+---@param y number
+---@param z number
+---@return matrix
+function matrix:setXYZi(x, y, z) end
+---@param vector vector
+---@return matrix
+function matrix:translate(vector) end
+---@param na number
+---@param nb number
+---@param nc number
+---@return matrix
+function matrix:scale(na, nb, nc) end
 
 ---@class Frect
 ---@field lt any
