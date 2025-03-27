@@ -623,89 +623,188 @@ function vector2:set( vector2) end
 
 
 ---@class vector
----@field x any
----@field y any
----@field z any
+---@field x number
+---@field y number
+---@field z number
 ---@overload fun(): vector
 vector = {}
 ---@param number number
+---@return vector
 function vector:set_length(number) end
 ---@param number number
+---@return vector
 function vector:sub(number) end
 ---@param vector vector
-function vector:sub( vector) end
-function vector:sub( vector,  vector) end
-function vector:sub( vector, number) end
-function vector:reflect( vector,  vector) end
-function vector:slide( vector,  vector) end
+---@return vector
+function vector:sub(vector) end
+---@param va vector
+---@param vb vector
+---@return vector
+function vector:sub(va, vb) end
 ---@param vector vector
-function vector:average( vector) end
-function vector:average( vector,  vector) end
+---@param number number
+---@return vector
+function vector:sub(vector, number) end
+---@param va vector
+---@param vb vector
+---@return vector
+function vector:reflect(va, vb) end
+---@param va vector
+---@param vb vector
+---@return vector
+function vector:slide(va, vb) end
+---@param vector vector
+---@return vector
+function vector:average(vector) end
+---@param va vector
+---@param vb vector
+---@return vector
+function vector:average(va, vb) end
 function vector:normalize_safe() end
 ---@param vector vector
-function vector:normalize_safe( vector) end
+---@return vector
+function vector:normalize_safe(vector) end
+---@return vector
 function vector:normalize() end
 ---@param vector vector
-function vector:normalize( vector) end
+---@return vector
+function vector:normalize(vector) end
+---@return any
 function vector:align() end
+---@return number
 function vector:magnitude()  end
+---@return any
 function vector:getP()  end
 ---@param vector vector
-function vector:max( vector) end
-function vector:max( vector,  vector) end
+---@return vector
+function vector:max(vector) end
+---@param va vector
+---@param vb vector
+---@return vector
+function vector:max(va, vb) end
 ---@param vector vector
-function vector:distance_to_xz( vector)  end
+---@return number
+function vector:distance_to_xz(vector)  end
 function vector:invert() end
 ---@param vector vector
-function vector:invert( vector) end
-function vector:mad( vector, number) end
-function vector:mad( vector,  vector, number) end
-function vector:mad( vector,  vector) end
-function vector:mad( vector,  vector,  vector) end
----@param vector vector
-function vector:clamp( vector) end
-function vector:clamp( vector, vector) end
-function vector:inertion( vector, number) end
-function vector:crossproduct( vector,  vector) end
 ---@return vector
-function vector:set(number, number, number) end
+function vector:invert(vector) end
 ---@param vector vector
----@return vector
-function vector:set( vector) end
----@param vector vector
-function vector:abs( vector) end
 ---@param number number
+---@return vector
+function vector:mad(vector, number) end
+---@param va vector
+---@param vb vector
+---@param number number
+---@return vector
+function vector:mad(va, vb, number) end
+---@param va vector
+---@param vb vector
+---@return vector
+function vector:mad(va, vb) end
+---@param va vector
+---@param vb vector
+---@param vc vector
+---@return vector
+function vector:mad(va, vb, vc) end
+---@param vector vector
+---@return vector
+function vector:clamp(vector) end
+---@param va vector
+---@param vb vector
+---@return vector
+function vector:clamp(va, vb) end
+---@param vector vector
+---@param number vector
+---@return any
+function vector:inertion(vector, number) end
+---@param va vector
+---@param vb vector
+---@return vector
+function vector:crossproduct(va, vb) end
+---@param na number
+---@param nb number
+---@param nc number
+---@return vector
+function vector:set(na, nb, nc) end
+---@param vector vector
+---@return vector
+function vector:set(vector) end
+---@param vector vector
+---@return vector
+function vector:abs(vector) end
+---@param number number
+---@return vector
 function vector:div(number) end
 ---@param vector vector
-function vector:div( vector) end
-function vector:div( vector,  vector) end
-function vector:div( vector, number) end
+---@return vector
+function vector:div(vector) end
+---@param va vector
+---@param vb vector
+---@return vector
+function vector:div(va, vb) end
 ---@param vector vector
-function vector:dotproduct( vector)  end
+---@param number number
+---@return vector
+function vector:div(vector, number) end
+---@param vector vector
 ---@return number
+function vector:dotproduct(vector)  end
 function vector:getH()  end
 ---@param vector vector
-function vector:min( vector) end
-function vector:min( vector,  vector) end
-function vector:similar( vector, number)  end
+---@return vector
+function vector:min(vector) end
+---@param va vector
+---@param vb vector
+---@return vector
+function vector:min(va, vb) end
 ---@param vector vector
-function vector:distance_to( vector)  end
-function vector:lerp( vector,  vector, number) end
----@param vector vector
-function vector:distance_to_sqr( vector)  end
 ---@param number number
+---@return any
+function vector:similar(vector, number)  end
+---@param vector vector
+---@return number
+function vector:distance_to(vector)  end
+---@param va vector
+---@param vb vector
+---@param number number
+---@return number
+function vector:lerp(va, vb, number) end
+---@param vector vector
+---@return number
+function vector:distance_to_sqr(vector)  end
+---@param number number
+---@return vector
 function vector:mul(number) end
 ---@param vector vector
-function vector:mul( vector) end
-function vector:mul( vector,  vector) end
-function vector:mul( vector, number) end
+---@return vector
+function vector:mul(vector) end
+---@param va vector
+---@param vb vector
+---@return vector
+function vector:mul(va, vb) end
+---@param vector vector
+---@param number number
+---@return vector
+function vector:mul(vector, number) end
+---@param na number
+---@param nb number
+---@return vector
 function vector:setHP(number, number) end
 ---@param number number
+---@return vector
 function vector:add(number) end
 ---@param vector vector
-function vector:add( vector) end
-function vector:add( vector,  vector) end
-function vector:add( vector, number) end
+---@return vector
+function vector:add(vector) end
+---@param va vector
+---@param vb vector
+---@return vector
+function vector:add(va, vb) end
+---@param vector vector
+---@param number vector
+---@return vector
+function vector:add(vector, number) end
 
 
 
