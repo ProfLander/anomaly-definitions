@@ -1323,7 +1323,12 @@ function game_object:set_movement_selection_type(enum_ESelectionType) end
 function game_object:disable_anomaly() end
 ---@param game_object game_object
 function game_object:motivation_action_manager(game_object) end
-function game_object:bone_position(string)  end
+---Returns position vector of a bone in the `game_object`.
+---
+---@param bone_name? string defaults to root bone if nil
+---@param bHud? boolean set `true` if `game_object` is a hud item - defaults to false
+---@return vector
+function game_object:bone_position(bone_name, bHud)  end
 ---@param string string
 function game_object:object(string) end
 ---@param number number
