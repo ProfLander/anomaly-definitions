@@ -608,7 +608,12 @@ function matrix:setHPB(heading, pitch, bank) end
 ---@param y number
 ---@param z number
 ---@return matrix
+function matrix:setHPB(hpb) end
+---@param hpb vector
+---@return matrix
 function matrix:setXYZ(x, y, z) end
+---@return vector
+function matrix:getHPB() end
 ---@param matrix number
 ---@param n1 number
 ---@param n2 number
@@ -634,6 +639,11 @@ function matrix:setXYZi(x, y, z) end
 ---@param vector vector
 ---@return matrix
 function matrix:translate(vector) end
+---@param x number
+---@param y number
+---@param z number
+---@return matrix
+function matrix:translate(x, y, z) end
 ---@param na number
 ---@param nb number
 ---@param nc number
