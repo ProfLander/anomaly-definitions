@@ -45,7 +45,13 @@ function command_line() end
 function getFS() end
 ---@param string string
 function valid_saved_game(string) end
+
+---@class console
+---@field get_float (self: console, fun(key: string): float)
+
+---@return console
 function get_console() end
+
 function app_ready() end
 function IsDynamicMusic() end
 ---@param string string
