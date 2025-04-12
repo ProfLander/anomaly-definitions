@@ -23,6 +23,18 @@ function game_object:bone_direction(bone, bHud) end
 ---@return table<number, string>
 function game_object:list_bones(bHud) end
 
+---@param bone? number|string defaults to root bone if nil
+---@return number
+function game_object:bone_parent(bone, bHud) end
+
+---@param name? string defaults to root bone if nil
+---@return number
+function game_object:bone_id(name, bHud) end
+
+---@param id? number defaults to root bone if nil
+---@return number
+function game_object:bone_name(id, bHud) end
+
 -- Additional exports from Modded Exes: https://github.com/themrdemonized/xray-monolith
 --[[
     lua extensions {
