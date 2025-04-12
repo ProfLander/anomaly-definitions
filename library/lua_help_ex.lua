@@ -1,5 +1,9 @@
 ---@meta
 
+---Additional keybinds
+key_bindings.kSAFEMODE = 92
+key_bindings.kFREELOOK = 93
+
 ---@param bone? number|string defaults to root bone if nil
 ---@param bHud? boolean set `true` if `game_object` is a hud item - defaults to false
 ---@return vector
