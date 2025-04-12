@@ -35,6 +35,25 @@ function game_object:bone_id(name, bHud) end
 ---@return number
 function game_object:bone_name(id, bHud) end
 
+---@param pos vector
+---@param hud? boolean
+---@param allow_offscreen? boolean
+---@return vector2
+function game.world2ui(pos, hud, allow_offscreen)
+
+---@param pos vector2
+---@return vector, number
+function game.ui2world(pos) end
+
+---@param UIWindow uiwindow
+---@param show_time number
+---@return nil
+function game.change_game_news_show_time(UIWindow, show_time)
+
+---@param UIWindow uiwindow
+---@return nil
+function game.update_pda_news_from_uiwindow(UIWindow)
+
 -- Additional exports from Modded Exes: https://github.com/themrdemonized/xray-monolith
 --[[
     lua extensions {
@@ -685,4 +704,3 @@ function game_object:bone_name(id, bHud) end
         return mat
     end
 --]]
-
